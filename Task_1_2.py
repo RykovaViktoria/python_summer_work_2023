@@ -4,4 +4,7 @@ b = x - y
 c = x * y
 d = x / y
 e = x // y
-print('Наибольшее число:', max(a,b,c,d,e))
+list=[a,b,c,d,e]
+list.sort()
+print(list)
+print('Наибольшее число:', list[-1])
