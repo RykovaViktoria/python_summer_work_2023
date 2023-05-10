@@ -1,0 +1,10 @@
+import re
+n=str(input('Введите предложение 1 -->'))
+s=str(input('Введите предложение 2 -->'))
+s = re.sub('\s+','', s)
+n = re.sub('\s+','', n)
+reg = re.compile('[^a-zA-Z ]')
+s = reg.sub('', s)
+n = reg.sub('', n)
+print(n ,s)
+print(sorted(list(n))==sorted(list(s)))
