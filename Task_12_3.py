@@ -11,6 +11,7 @@ def func(s):
         lst.append(j)
     lst1 = [int(i) for i in lst]
     # print(lst1)
+
     ma = max(lst1)
     k = 0
     spi = []
